@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    } 
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    margin: 40px 40px 20px 40px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+}
+.navLogoLugar{
+    display: flex;
+    justify-content: space-between;
+    .iconoLogo{
+        display: flex;
+        padding-right: 65px;
+        align-items:center;
+        img{
+            height: 60px;
+            padding: 3%;
+        }
+    }
+    .iconoLugar{
+        display: flex;
+        align-items: center;
+        padding-right: 303px;
+        i{
+            padding: 7%;
+        }
+    }
+}
+.navAtajos{
+    display: flex;
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+        padding: 15px;
+    }
+}
+
+body{
+    background-image: url("/img/pagina-en-constr.jpg");
+    background-color: #cccccc;
+    width: 1440px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+footer{
+    display: flex;
+    margin: 40px 80px 40px 80px;
+    justify-content: space-between;
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    font-size: 10px;
+}
+

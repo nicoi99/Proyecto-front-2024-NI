@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    } 
+
+/*Estilo de barra de navegación*/
+nav{
+    /*display: flex;
+    justify-items: stretch;
+    align-items: center;
+    margin: 40px 40px 20px 40px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13px;*/
+    grid-area: nav;
+    background-color: darkgoldenrod;
+}
+/*.navLogoLugar{
+    display: flex;
+    justify-content: space-between;
+    .iconoLogo{
+        display: flex;
+        padding-right: 65px;
+        align-items:center;
+        img{
+            height: 60px;
+            padding: 3%;
+        }
+    }
+    .iconoLugar{
+        display: flex;
+        align-items: center;
+        padding-right: 303px;
+        i{
+            padding: 7%;
+        }
+    }
+}
+.navAtajos{
+    display: flex;
+    a{
+        text-decoration: none;
+        font-display: none;
+        color: black;
+    }
+
+    li{
+        list-style: none;
+        padding: 10px;
+        align-items: center;
+        
+        
+    }
+    a:hover{
+        background-color: black;
+        color: #D9D9D9;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+
+}*/
+
+.gridLayout{
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: 10% 10% 50% 40% 10%;
+    grid-template-areas:
+    "nav     nav      nav"
+    "banner  banner   banner"
+    "ultimoP ultimoP ultimoP"
+    "pAnt     pAnt   categoria"
+    "footer   footer  footer";
+    gap: 15px 5px;
+}
+
+.bannerImg{
+    grid-area: banner;
+    img{
+        width: 1200px;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+
+main{
+    grid-area: ultimoP;
+    display: flex;
+    background-color: aqua;
+}
+
+section{
+    grid-area: pAnt;
+    display: flex;
+    background-color: blueviolet;
+}
+
+aside{
+    grid-area: categoria;
+    background-color: salmon;
+}
+
+footer{
+    grid-area:footer;
+    background-color: palevioletred;
+}
+
+
+
+
+

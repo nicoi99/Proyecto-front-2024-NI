@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    } 
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 40px 40px 20px 40px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13px;
+}
+.navLogoLugar{
+    display: flex;
+    justify-content: space-between;
+    .iconoLogo{
+        display: flex;
+        padding-right: 65px;
+        align-items:center;
+        img{
+            height: 60px;
+            padding: 3%;
+        }
+    }
+    .iconoLugar{
+        display: flex;
+        align-items: center;
+        padding-right: 303px;
+        i{
+            padding: 7%;
+        }
+    }
+}
+.navAtajos{
+    display: flex;
+    a{
+        text-decoration: none;
+        font-display: none;
+        color: black;
+    }
+
+    li{
+        list-style: none;
+        padding: 10px;
+        align-items: center;
+        
+        
+    }
+    a:hover{
+        background-color: black;
+        color: #D9D9D9;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+
+}
+
+main{
+    margin: 20px 50px 15px 50px;
+    background-color: white;
+    align-items: center;
+}
+.contenedorContactoyTexto{ 
+    display: flex;
+    margin: 0 60px 0 60px;
+    padding: 50px;
+    align-items: center;
+    justify-content:space-between;
+    /*flex-wrap: wrap;*/
+    .texto{
+        display: flex;
+        flex-direction: column;
+        padding: 70px 50px;
+    }
+    .tituloPrincipal{
+        font-family: 'Nunito Sans', bold;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .tituloSecundario{
+        font-family: 'Nunito Sans', light;
+        font-size: 15px;
+        font-weight: 250;
+    }
+    .formularioContacto form{
+        font-family: 'Roboto', bold;
+        font-weight: 500;
+        font-size: 15px;
+        background: #D9D9D9;
+        border-radius: 15px;
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center; 
+        .nombreApellido{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .paisCiudad{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:space-between;
+        }
+        label{
+            padding: 5px;
+        }
+        input{
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+            margin: 5px;
+        }
+    }
+}
+.contenedorContactoyTexto .btnEnviar input[type=submit]{
+    width: 80px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px;
+    float: right;
+}
+footer{
+    display: flex;
+    margin: 40px 80px 40px 80px;
+    justify-content: space-between;
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    font-size: 10px;
+    p{
+        padding: 5px;
+        color: black;
+    }
+
+    a{
+        text-decoration: none;
+        font-display: none;
+    }
+    p:hover{
+        background-color: black;
+        color: #D9D9D9;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+}
