@@ -3,60 +3,280 @@
     padding: 0;
     } 
 
+/*Estilos a barra de navegacion
+-Icono de la app 
+-Icono de lugar de donde se visita, con posibilidad de cambiarlo
+-Navbar
+*/
 nav{
     display: flex;
     justify-content:space-around;
+    align-items: center;
     margin: 40px 40px 20px 40px;
     font-family: 'Roboto';
     font-weight: 700;
     font-style: normal;
-    font-size: 15px;
+    font-size: 13px;
 }
 .navLogoLugar{
     display: flex;
     justify-content: space-between;
-    .iconoLogo{
-        display: flex;
-        padding-right: 65px;
-        align-items:center;
-        img{
-            height: 60px;
-            padding: 3%;
-        }
+    img{
+        width: 150px;
     }
-    .iconoLugar{
-        display: flex;
-        align-items: center;
-        padding-right: 303px;
-        i{
-            padding: 7%;
-        }
+}
+.iconoLugar{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    padding:5px;
+    i{
+        color: #1D7874;
+        padding: 7%;
+    }
+    a{
+        text-decoration: none;
+        font-display: none;
+        color: #1D7874;
     }
 }
 .navAtajos{
     display: flex;
     a{
         text-decoration: none;
+        font-display: none;
+        color: black;
     }
+
     li{
         list-style: none;
-        padding: 15px;
+        padding: 10px;
+        align-items: center;
+    }
+}
+.navAtajos a:hover{
+    background-color: #1D7874;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+/*Main
+4 secciones: 
+1)Bienvenida a la app 
+2)funciones
+3)reviews
+4)descarga
+*/
+main{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+ /*--MAIN-- 3 SECCIONES:
+ 1)PRINCIPAL - VISTAZO RÁPIDO DE RRSS PRINCIPALES
+ 2)SEGUNDA PARTE -- YOUTUBE - ULTIMO VIDEO Y RESUMEN
+ 3)ULTIMA PARTE -- NEWSLETTER*/
+
+.bloquePrincipalRRSS{
+    display: flex;
+    flex-direction: column;
+    background-color: #1D7874;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0 0 15px 15px;
+    margin: 0;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+
+}
+.tituloPrincipal{
+    font-family: "Roboto","bold";
+    font-style: bold;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 5px;
+    color: #D4C5E2;
+}
+
+.subtituloSecundario{
+    font-family: "Roboto", "light";
+    font-style: light;
+    font-weight: 350;
+    font-size: 25px;
+    margin: 5px 10px;
+}
+
+.contenedorGrupoRRSS{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    img{
+        width: 320px;
+        height: auto;
+        margin: 5px;
+        border-radius: 20px 20px 0 0;
     }
 }
 
-body{
-    background-image: url("/img/pagina-en-constr.jpg");
-    background-color: #cccccc;
-    width: 1440px;
-    background-repeat: no-repeat;
-    background-position: top center;
+.RRSSindiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
+/*BOTONES RRSS*/
+.btn{
+    background-color: white;
+    color: black;
+    font-family: "Roboto", "black";
+    font-weight: 600;
+    font-size: 15px;
+    padding: 20px 25px ;
+    border-radius: 30px;
+    width: 300px;
+    margin: 10px;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.btn:hover{
+    background-color: rgba(37, 154, 148, 0.691);
+    border: 1px solid black;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/*--BLOQUE 2: YOUTUBE--*/
+.bloqueYoutube{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloqueYoutube .texto{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 30px;
+    padding: 15px;
+}
+
+.bloqueYoutube .texto .tituloPrincipal{
+    color: black;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.bloqueYoutube .texto .subtitulo2{
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*--ULTIMA PARTE: SEGUIR--*/
+
+.bloqueSeguir{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 25px 50px;
+    padding: 25px;
+    width: 50vw;
+}
+
+.bloqueSeguir .tituloPrincipal{
+    color: black;
+}
+
+.bloqueSeguir .btn{
+    border: solid 1px #D4C5E2;
+    font-weight: 900;
+}
+
+.bloqueSeguir .btn:hover{
+    border: solid 1px #D4C5E2;
+    background-color: #D4C5E2;
+    color: black;
+    font-weight: 900;
+}
+
+/*--FOOTER--*/
 footer{
     display: flex;
-    margin: 40px 80px 40px 80px;
-    justify-content: space-between;
-    font-family: 'Nunito Sans';
+    flex-direction: column;
+    margin: 10px 50px 10px 50px;
+    justify-content:space-around;
+    font-family: 'Nunito Sans', "semibold";
     font-weight: 700;
-    font-size: 10px;
+    font-size: 15px;
+    a{
+        text-decoration: none;
+        font-display: none;
+    }
+    p{
+        color: black;
+        padding: 10px;
+        margin: 30px;
+    }
+}
+/*BLOQUE 1: IMAGEN LOGO + NAVEGACION FOOTER*/
+.footerBloque1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    justify-content: left;
+    img{
+        width: 20%;
+    }
+}
+
+.navAtajos{
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px;
+}
+
+.footerBloque1 .navAtajos  a:hover{
+    background-color: white;
+    color: #1D7874;
+    font-weight: 900;
+}
+
+/*BLOQUE 2: REDES SOCIALES FOOTER*/
+
+.footerBloque2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 20px;
+    i{
+        padding: 10px;
+        width: 10px;
+        margin: 5px;
+        color: #1D7874;
+    }
+    a{
+        text-decoration: none;
+    }
 }
 

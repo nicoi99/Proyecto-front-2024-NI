@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    } 
+
+/*Estilos a barra de navegacion
+-Icono de la app 
+-Icono de lugar de donde se visita, con posibilidad de cambiarlo
+-Navbar
+*/
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 40px 40px 20px 40px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13px;
+}
+.navLogoLugar{
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 150px;
+    }
+}
+.iconoLugar{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    padding:5px;
+    i{
+        color: #1D7874;
+        padding: 7%;
+    }
+    a{
+        text-decoration: none;
+        font-display: none;
+        color: black;
+    }
+}
+.navAtajos{
+    display: flex;
+    a{
+        text-decoration: none;
+        font-display: none;
+        color: black;
+    }
+
+    li{
+        list-style: none;
+        padding: 10px;
+        align-items: center;
+    }
+}
+.navAtajos a:hover{
+    background-color: #1D7874;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+/*MAIN - 5 SECCIONES
+1) BIENVENIDA
+2)BENEFICIOS
+3)TESTIMONIOS VENDEDORES
+4)SUMARSE - BOTON
+5)CONTACTO VENDEDORES*/
+
+main{
+    margin: 10px 0 15px 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/*--BLOQUE INICIAL --- BIENVENIDA*/
+.bloqueInicial{
+    background: linear-gradient(rgb(29, 120, 116, 0.50), rgb(35, 153, 148, 0.50), #fff );
+    border-radius: 15px;
+    width: 100vw;
+    margin: 30px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    img{
+        width: 500px;
+        height: auto;
+        margin-left: 50px;
+    }
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    padding: 50px;
+
+}
+.tituloPrincipal{
+    font-family: "Roboto","bold";
+    font-style: bold;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 5px;
+    width: 400px;
+}
+
+.subtituloSecundario{
+    font-family: "Roboto", "light";
+    font-style: light;
+    font-weight: 350;
+    font-size: 25px;
+    margin: 5px 10px;
+    width: 400px;
+}
+
+/*--BOTONES--*/
+.botones{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*--BOTON ACTIVO-- */
+.btn1{
+    background-color: #1D7874;
+    color: #fff;
+    font-family: "Roboto", "black";
+    font-weight: 600;
+    font-size: 17px;
+    padding: 15px 10px ;
+    border-radius: 30px;
+    justify-content: center;
+    align-self: center;
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.btn1:hover{
+    background-color: #fff;
+    border: 1px solid #1D7874;
+    color: black;
+    transition: 0.2s;
+    cursor: pointer;
+    border: none;
+}
+
+/*--BOTON SECUNDARIO--*/
+.btn2{
+    background-color: #ffffff;
+    color: black;
+    font-family: "Roboto", "black";
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    padding: 10px 10px ;
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+    border: solid 1px #1D7874;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.btn2:hover{
+    background-color: rgb(29, 120, 116, 0.5);
+    border: 1px solid black;
+    color: black;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/*--BLOQUE 2-- BENEFICIOS PARA VENDEDORES*/
+
+.bloqueBeneficios{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 70px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.beneficioINDV-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+    margin: 30px;
+}
+
+.beneficioINDV-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+    margin: 30px;
+}
+.beneficioINDV-3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+    margin: 30px;
+}
+
+.hashtagBeneficio1{
+    font-family: "Roboto", bold;
+    font-size: 55px;
+    font-weight: 700;
+    padding: 20px;
+    margin: 10px;
+    background-color: #1D7874;
+    border-radius: 30px;
+    color: black;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hashtagBeneficio2{
+    font-family: "Roboto", bold;
+    font-size: 55px;
+    font-weight: 700;
+    padding: 20px;
+    margin: 10px;
+    border:solid 1px #1D7874;
+    border-radius: 30px;
+    color: black;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.beneficioTexto{
+    font-family: "Roboto", "light";
+    font-style: light;
+    line-height: 30px;
+}
+
+.tituloBeneficio{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*--BLOQUE 3-- TESTIMONIOS DE COMERCIOS*/
+
+.bloqueTestimonios{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 70px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloqueTestimonios .tituloPrincipal{
+    width: 900px;
+    margin: 35px;
+}
+
+.bloqueComerciosTestimonios{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows:repeat(2, auto);
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+}
+
+.testimonioComercioIndiv{
+    display: flex;
+    flex-direction: column;
+    border: solid #D4C5E2 2px;
+    width: 470px;
+    padding: 30px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.testimonioComercioIndiv:hover{
+    background-color: rgb(29, 120, 116, 0.6);
+    transition: 0.2s;
+    box-shadow: 0 10px 30px rgb(9, 9, 9, 0.25);
+}
+
+.cuerpoTexto{
+    font-family: "Nunito Sans", "light";
+    font-size: 17px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.identificacionComercio{
+    font-family: "Nunito Sans", "light";
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/*--BLOQUE 4-- CÓMO SUMARSE? - VENDEDORES*/
+
+.bloqueSumarse{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 70px;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+.bloqueSumarse .subtituloSecundario{
+    width: 600px;
+    margin: 20px 0;
+}
+
+.grupoPasos{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.numeroPaso{
+    font-family: "Roboto";
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.descripcionPaso{
+    font-family: "Nunito Sans", "light";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+}
+
+.pasoIndividual{
+    width: 300px;
+    margin: 0 30px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.paso-Img{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    img{
+        margin:5px;
+        width: 230px;
+        height: auto;
+    }
+}
+
+/*--CONTACTO VENDEDORES--*/
+.bloqueContactoVendedores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px 70px;
+    padding: 25px;
+}
+
+.formularioContacto{
+    margin: 50px;
+    align-content: center;
+}
+
+.formularioContacto form{
+    width: 500px;
+    height: 400px;
+    font-family: 'Roboto', bold;
+    font-weight: 500;
+    font-size: 15px;
+    background: rgb(212, 197, 226, 0.7);
+    border-radius: 15px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        label{
+            padding: 5px;
+        }
+        input{
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+            margin: 5px;
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+.nombreComercio{
+    input{
+        width: 400px;
+    }
+}
+.paisCiudad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.comentarios-Btn{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+#Comentarios{
+    width: 500px;
+    height: 100px;
+    border: none;
+    border-radius: 15px;
+    font-family: "Nunito Sans";
+    text-align: left;
+    justify-content: left;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.btnEnviar{
+    margin: 15px 0;
+    justify-content: end;
+    text-align: right;
+}
+
+.btnEnviar input[type=submit]{
+    width: 80px;
+    background-color: #1D7874;
+    color: #fff;
+    font-family: "Roboto", "black";
+    font-weight: 700;
+    font-size: 15px;
+    text-transform:capitalize;
+    padding: 10px 6px ;
+    border-radius: 15px;
+    margin: 5px;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.btnEnviar input:hover{
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+    transition: 0.2s;
+    cursor: pointer;
+}
+/*--FOOTER--*/
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px 10px 50px;
+    justify-content:space-around;
+    font-family: 'Nunito Sans', "semibold";
+    font-weight: 700;
+    font-size: 15px;
+    a{
+        text-decoration: none;
+        font-display: none;
+    }
+    p{
+        color: black;
+        padding: 10px;
+        margin: 30px;
+    }
+}
+/*BLOQUE 1: IMAGEN LOGO + NAVEGACION FOOTER*/
+.footerBloque1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    justify-content: left;
+    img{
+        width: 20%;
+    }
+}
+
+.navAtajos{
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px;
+}
+
+.footerBloque1 .navAtajos  a:hover{
+    background-color: white;
+    color: #1D7874;
+    font-weight: 900;
+}
+
+/*BLOQUE 2: REDES SOCIALES FOOTER*/
+
+.footerBloque2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 20px;
+    i{
+        padding: 10px;
+        width: 10px;
+        margin: 5px;
+        color: #1D7874;
+    }
+    a{
+        text-decoration: none;
+    }
+}

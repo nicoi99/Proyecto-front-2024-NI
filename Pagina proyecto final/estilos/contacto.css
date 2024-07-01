@@ -3,6 +3,11 @@
     padding: 0;
     } 
 
+/*HEADER -- Estilos a barra de navegacion
+-Icono de la app 
+-Icono de lugar de donde se visita, con posibilidad de cambiarlo
+-Navbar
+*/
 nav{
     display: flex;
     justify-content:space-around;
@@ -16,22 +21,21 @@ nav{
 .navLogoLugar{
     display: flex;
     justify-content: space-between;
-    .iconoLogo{
-        display: flex;
-        padding-right: 65px;
-        align-items:center;
-        img{
-            height: 60px;
-            padding: 3%;
-        }
+    img{
+        width: 150px;
     }
-    .iconoLugar{
-        display: flex;
-        align-items: center;
-        padding-right: 303px;
-        i{
-            padding: 7%;
-        }
+}
+.iconoLugar{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    padding:5px;
+    i{
+        color: #1D7874;
+        padding: 7%;
+    }
+    a{
+        text-decoration: none;
     }
 }
 .navAtajos{
@@ -46,67 +50,180 @@ nav{
         list-style: none;
         padding: 10px;
         align-items: center;
-        
-        
     }
-    a:hover{
-        background-color: black;
-        color: #D9D9D9;
-        border-radius: 5px;
-        transition: 0.5s;
-    }
-
 }
+.navAtajos a:hover{
+    background-color: #1D7874;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+/*MAIN -- 3 bloques
+1)Preguntas Frecuentes
+2)Descarga 
+3)Contacto*/
 
 main{
-    margin: 20px 50px 15px 50px;
+    margin: 30px 50px 15px 50px;
     background-color: white;
     align-items: center;
-}
-.contenedorContactoyTexto{ 
     display: flex;
-    margin: 0 60px 0 60px;
-    padding: 50px;
+    flex-direction: column;
+}
+
+/*PREGUNTAS FRECUENTES */
+.bloquePreguntasFrecuentes{
+    display: flex;
+    flex-direction: row;
+    img{
+        width: 450px;
+    }
+}
+
+.bloquePreguntasFrecuentes .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.bloquePreguntasFrecuentes .tituloPrincipal{
+    font-family: "Roboto","bold";
+    font-style: bold;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 5px;
+    text-align: left;
+}
+
+.bloqueTextoPequeño1{
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito Sans";
+    justify-content: left;
+    padding: 10px;
+    width: 70%;
+}
+
+.bloqueTextoPequeño2{
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito Sans";
+    justify-content: right;
+    text-align: right;
+    padding: 10px;
+    width: 70%;
+}
+
+.tituloSecundario{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/*DESCARGA */
+.parteDescarga-2{
+    display: flex;
+    background-color: #1D7874;
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
+    padding: 30px;
+    margin: 10px 0;
+    border-radius: 0 0 15px 15px;
+    justify-content: center;
+}
+
+.tituloPrincipal{
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+}
+
+.bloqueDescarga{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content:space-between;
-    /*flex-wrap: wrap;*/
-    .texto{
-        display: flex;
-        flex-direction: column;
-        padding: 70px 50px;
-    }
-    .tituloPrincipal{
-        font-family: 'Nunito Sans', bold;
-        font-weight: 700;
-        font-size: 30px;
-    }
-    .tituloSecundario{
-        font-family: 'Nunito Sans', light;
-        font-size: 15px;
-        font-weight: 250;
-    }
-    .formularioContacto form{
-        font-family: 'Roboto', bold;
-        font-weight: 500;
-        font-size: 15px;
-        background: #D9D9D9;
+    padding: 10px;
+    img{
+        width: 200px;
+        margin: 10px 15px 10px 0;
         border-radius: 15px;
-        padding: 20px 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content:center; 
-        .nombreApellido{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-        }
-        .paisCiudad{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content:space-between;
-        }
+    }
+}
+
+a img:hover{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 0.3s;
+    scale: 1.05;
+}
+/*CONTACTO*/
+
+.bloqueContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 50px;
+    padding: 15px;
+}
+
+.bloqueImgYFormulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.bloqueContacto .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloPrincipal{
+    font-family: "Roboto","bold";
+    color: black;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.subtituloSecundario{
+    font-family: "Roboto", "light";
+    font-style: light;
+    font-weight: 350;
+    font-size: 25px;
+    margin: 5px 10px;
+}
+
+.bloqueImgYFormulario{
+    img{
+        width: 450px;
+    }
+    display: flex;
+    flex-direction: row;
+}
+
+.formularioContacto{
+    margin: 50px;
+}
+
+.formularioContacto form{
+    width: 500px;
+    height: 400px;
+    font-family: 'Roboto', bold;
+    font-weight: 500;
+    font-size: 15px;
+    background: rgb(212, 197, 226, 0.7);
+    border-radius: 15px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
         label{
             padding: 5px;
         }
@@ -115,39 +232,127 @@ main{
             border: none;
             border-radius: 10px;
             margin: 5px;
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
         }
     }
+
+.nombreApellido{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
-.contenedorContactoyTexto .btnEnviar input[type=submit]{
+
+.paisCiudad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.comentarios-Btn{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+#Comentarios{
+    width: 500px;
+    height: 100px;
+    border: none;
+    border-radius: 15px;
+    font-family: "Nunito Sans";
+    text-align: left;
+    justify-content: left;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.btnEnviar{
+    margin: 15px 0;
+    justify-content: end;
+    text-align: right;
+}
+
+.btnEnviar input[type=submit]{
     width: 80px;
-    background-color: black;
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 5px;
-    float: right;
+    background-color: #1D7874;
+    color: #fff;
+    font-family: "Roboto", "black";
+    font-weight: 700;
+    font-size: 15px;
+    text-transform:capitalize;
+    padding: 10px 6px ;
+    border-radius: 15px;
+    margin: 5px;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
+.btnEnviar input:hover{
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+    transition: 0.2s;
+    cursor: pointer;
+}
+/*ULTIMA PARTE -- FOOTER*/
+
 footer{
     display: flex;
-    margin: 40px 80px 40px 80px;
-    justify-content: space-between;
-    font-family: 'Nunito Sans';
+    flex-direction: column;
+    margin: 10px 50px 10px 50px;
+    justify-content:space-around;
+    font-family: 'Nunito Sans', "semibold";
     font-weight: 700;
-    font-size: 10px;
-    p{
-        padding: 5px;
-        color: black;
-    }
-
+    font-size: 15px;
     a{
         text-decoration: none;
         font-display: none;
     }
-    p:hover{
-        background-color: black;
-        color: #D9D9D9;
-        border-radius: 5px;
-        transition: 0.5s;
+    p{
+        color: black;
+        padding: 10px;
+        margin: 30px;
+    }
+}
+
+/*BLOQUE 1: IMAGEN LOGO + NAVEGACION FOOTER*/
+.footerBloque1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    justify-content: left;
+    img{
+        width: 20%;
+    }
+}
+
+.navAtajos{
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px;
+}
+
+.footerBloque1 .navAtajos  a:hover{
+    background-color: white;
+    color: #1D7874;
+    font-weight: 900;
+}
+
+/*BLOQUE 2: REDES SOCIALES FOOTER*/
+
+.footerBloque2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 20px;
+    i{
+        padding: 10px;
+        width: 10px;
+        margin: 5px;
+        color: #1D7874;
+    }
+    a{
+        text-decoration: none;
     }
 }

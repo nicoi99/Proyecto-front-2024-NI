@@ -8,64 +8,111 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>CONTACTO</title>
+    <title>GreenMatch: Contacto</title>
 </head>
 <body>
-    <nav>
-        <div class="navLogoLugar">
-            <div class="iconoLogo">
-                <img src="/img/abstract-letter-leaf-icon-logo-design/102_a_leaf.jpg" alt="icono_pagina">
-                <p>APP <br/> PLANTAS</p>
+    <header class="parteSuperior">
+        <nav>
+            <div class="navLogoLugar">
+                <img src="/img/icono-pagina.png" alt="Hoja que dice Plant Match">
+                <div class="iconoLugar">    
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href=""><p>LUGAR</p></a>
+                </div>
             </div>
-            <div class="iconoLugar">    
-                <i class="fa-solid fa-location-dot"></i>
-                <p>LUGAR</p>
+            <ul class="navAtajos">
+                <a href="/index.html"><li>INICIO</li></a>
+                <a href="/pages/contacto.html"><li>CONTACTO</li></a>
+                <a href="/pages/rrss.html"><li>REDES SOCIALES</li></a>
+                <a href="/pages/vendedores.html"><li>VENDEDORES</li></a>
+                <a href="/pages/blog.html"><li>BLOG</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="bloquePreguntasFrecuentes">
+            <img src="/img/img-landing-persona-pantalones.png" alt="">
+            <!--Aquí voy a generar 2 bloques. 1 para ubicar a todos los elementos 
+            de texto juntos, y el segundo para separar al título principal 
+            de cada bloque de texto más chico que van a ser independientes del 
+            principal. 
+            Buscando así poder dar un movimiento independiente a cada bloque pequeño.-->
+            <div class="texto">
+                <h3 class="tituloPrincipal">Preguntas Frecuentes</h3>
+                <div class="bloqueTextoPequeño1">
+                    <h5 class="tituloSecundario">¿Quiénes somos?</h5>
+                    <p class="cuerpoTexto"> Respuesta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. </p>
+                </div>
+                <div class="bloqueTextoPequeño2">
+                    <h5 class="tituloSecundario">¿Quiénes somos?</h5>
+                    <p class="cuerpoTexto"> Respuesta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. </p>
+                </div>
+                <div class="bloqueTextoPequeño1">
+                    <h5 class="tituloSecundario">¿Quiénes somos?</h5>
+                    <p class="cuerpoTexto"> Respuesta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. </p>
+                </div>
             </div>
         </div>
-        <ul class="navAtajos">
-            <a href="../index.html"><li>INICIO</li></a>
-            <a href=""><li>FUNCIONES</li></a>
-            <a href=""><li>DESCARGA</li></a>
-            <a href="/pages/rrss.html"><li>REDES SOCIALES</li></a>
-            <a href=""><li>CONTACTO</li></a>
-        </ul>
-    </nav>
-    <main>
-        <div class="contenedorContactoyTexto">
-            <div class="texto">
-                <p class="tituloPrincipal">CHARLA CON NOSOTROS</BR> </p> 
-                <p class="tituloSecundario">Queremos conocer tu opinión sobre la app!</p>
+        <div class="parteDescarga-2">
+            <h3 class="tituloPrincipal"> Descargá la app!</h3>
+            <div class="bloqueDescarga">
+                <a href=""><img src="/img/img-appstore.png" alt="Logo Appstore"></a>
+                <a href=""><img src="/img/img-playstore.png" alt="Logo Playstore"></a>
             </div>
-            <div class="formularioContacto">
-                <form method="get">
-                    <div class="nombreApellido">
-                            <label for="Nombre">Nombre: </label>
-                            <input type="text" id="Nombre" placeholder="¿Cómo te llamas?"/>
-                            <label for="Apellido">Apellido: </label>
-                            <input type="text" id="Apellido" placeholder="¿Cómo es tu apellido?"/>
+        </div>
+        <div class="bloqueContacto">
+            <div class="texto">
+                <p class="tituloPrincipal"> Te quedan dudas? Charla con nosotros! </p> 
+                <p class="subtituloSecundario">Compartinos tus comentarios o dudas, sumate a la comunidad. </p>
+            </div>
+            <div class="bloqueImgYFormulario">
+                <img src="/img/img-landing-persona-gomero.png" alt="Mujer rubia podando un gomero sobre fondo lavanda">
+                <div class="formularioContacto">
+                    <form method="get">
+                        <div class="nombreApellido">
+                                <label for="Nombre">Nombre: </label>
+                                <input type="text" id="Nombre" placeholder="¿Cómo te llamas?"/>
+                                <label for="Apellido">Apellido: </label>
+                                <input type="text" id="Apellido" placeholder="¿Cómo es tu apellido?"/>
                         </div>
-                        <div class="paisCiudad">
-                            <label for="Pais">País: </label>
-                            <input type="text" id="Pais" placeholder="¿En qué país naciste?"/>
-                            <label for="Ciudad">Ciudad: </label>
-                            <input type="text" id="Ciudad" placeholder="¿Y en qué ciudad?"/>
-                        </div>
-                        <label for="Correo">Correo: </label>
-                        <input type="email" id="Correo" placeholder="¿Cuál es tu correo electrónico?" />
-                        <label for="Comentarios">Comentarios: </label>
-                        <textarea id="Comentarios" name="comentarios" rows="3" cols="30"> 
-                            ¿Qué pensás de la aplicación?</textarea> <br/>
-                        <div class="btnEnviar">
-                            <input type="submit" value="enviar" />
-                    </div> 
-                </form> 
+                            <div class="paisCiudad">
+                                <label for="Pais">País: </label>
+                                <input type="text" id="Pais" placeholder="¿En qué país naciste?"/>
+                                <label for="Ciudad">Ciudad: </label>
+                                <input type="text" id="Ciudad" placeholder="¿Y en qué ciudad?"/>
+                            </div>
+                            <label for="Correo">Correo: </label>
+                            <input type="email" id="Correo" placeholder="¿Cuál es tu correo electrónico?" />
+                            <div class="comentarios-Btn">
+                                <label for="Comentarios">Comentarios: </label>
+                                <textarea id="Comentarios" name="comentarios" rows="4" cols="30"> 
+                                    ¿Qué pensás de la aplicación?</textarea> <br/>
+                                <div class="btnEnviar">
+                                    <input type="submit" value="enviar" />
+                                </div> 
+                            </div>
+                    </form> 
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        <a href=""><p>Sobre App Plantas</p></a>
-        <a href=""><p>Blog</p></a>
-        <a href=""><p>Novedades</p></a>
+        <div class="footerBloque1">
+            <img src="/img/icono-pagina.png" alt="Icono de pagina, Green Match con icono de hoja sobre circulo verde">
+            <div class="navAtajos">
+                <a href="/index.html"><p>Inicio</p></a>
+                <a href="/pages/contacto.html"><p>Contacto</p></a>
+                <a href="/pages/rrss.html"><p>Redes Sociales</p></a>
+                <a href="/pages/vendedores.html"><p>Vendedores</p></a>
+                <a href="/pages/blog.html"><p>Blog</p></a>
+            </div>
+        </div>
+        <div class="footerBloque2">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
     </footer>
 </body>
 </html>

@@ -6,45 +6,104 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Plantas</title>
+    <title>PlantMatch</title>
 </head>
 <body>
-    <nav>
-        <div class="navLogoLugar">
-            <div class="iconoLogo">
-                <img src="/img/abstract-letter-leaf-icon-logo-design/102_a_leaf.jpg" alt="icono_pagina">
-                <p>APP <br/> PLANTAS</p>
+    <header class="parteSuperior">
+        <nav>
+            <div class="navLogoLugar">
+                <img src="/img/icono-pagina.png" alt="Hoja que dice Plant Match">
+                <div class="iconoLugar">    
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href=""><p>LUGAR</p></a>
+                </div>
             </div>
-            <div class="iconoLugar">    
-                <i class="fa-solid fa-location-dot"></i>
-                <p>LUGAR</p>
+            <ul class="navAtajos">
+                <a href="/index.html"><li>INICIO</li></a>
+                <a href="/pages/contacto.html"><li>CONTACTO</li></a>
+                <a href="/pages/rrss.html"><li>REDES SOCIALES</li></a>
+                <a href="/pages/vendedores.html"><li>VENDEDORES</li></a>
+                <a href="/pages/blog.html"><li>BLOG</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="bienvenidaTextoImg">
+            <div class="texto">
+                <h1 class="tituloPrincipal">Llegó GreenMatch</h1>
+                <p class="subtituloSecundario">Tu nueva app para comprar plantas!</p>
+                <a href="#funcionalidades"><button class="btn">Conocé más</button></a>
+            </div>
+            <img src="./img/img-landing-sansiveira.png" alt="Maceta de sansiveira sobre fondo rosa" class="imgSansiveira">  
+        </section>
+        <div class="funcionalidades3Tarjetas" id="funcionalidades">
+            <div class="texto">
+                <h3 class="tituloPrincipal">
+                Todo esto es posible!
+                </h3>
+                <p class="subtituloSecundario">Funcionalidades principales de la app</p>
+            </div>
+            <div class="tarjetas">
+                <div class="tarjetaFuncion">
+                    <img src="/img/icono-tarjeta-casa-maceta.png" alt="Casita con maceta dentro sobre fondo verde">
+                    <p>Encontrá todos tus viveros favoritos.</p>
+                </div>
+                <div class="tarjetaFuncion">
+                    <img src="/img/icono-tarjeta-custom-barras.png" alt="Dos barras una verde y la otra roja sobre fondo blanco">
+                    <p>Customizá tu experiencia.</p>
+                </div>
+                <div class="tarjetaFuncion">
+                    <img src="/img/icono-tarjeta-celu-compra.png" alt="Celular con icono de compra sobre fondo verde">
+                    <p>Comprá plantas, macetas y todos los elementos de jardín necesarios.</p>
+                </div>
             </div>
         </div>
-        <ul class="navAtajos">
-            <a href=""><li>INICIO</li></a>
-            <a href=""><li>FUNCIONES</li></a>
-            <a href=""><li>DESCARGA</li></a>
-            <a href="/pages/rrss.html"><li>REDES SOCIALES</li></a>
-            <a href="/pages/contacto.html"><li>CONTACTO</li></a>
-        </ul>
-    </nav>
-    <main>
-        <div class="bannerInfo">
-                <div class="texto">
-                    <p class="tituloPrincipal">¡UNA NUEVA FORMA <br/>DE COMPRAR!</p>
-                    <h3 class="tituloSecundario">Encontrá más de 600 viveros cerca tuyo!</h3>
+        <div class="reseñaUsuario">
+            <img src="/img/img-reseña-persona.png" alt="Mujer rubia sonriendo sobre fondo gris">
+            <div class="textoReseña">
+                <h3 class="tituloPrincipal">Esto dicen nuestros usuarios!</h3>
+                <p class="nombreProfesion">María Vazquez | Arquitecta </p>
+                <p class="testimonio">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus”.</p>
+                <div class="estrellas">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
-                <img src="/img/compra_chica.jpg" alt="Mujer con planta sonriendo">
+            </div>
+        </div>
+        <div class="parteDescarga">
+            <div class="texto">
+                <h3 class="tituloPrincipal"> Comenzá hoy a sumar verde a tu vida!</h3>
+                <p class="subtituloSecundario"> Descarga ya la app</p>
+                <div class="bloqueImg">
+                    <a href=""><img src="/img/img-appstore.png" alt="Imagen de app Store"></a>
+                    <a href=""><img src="/img/img-playstore.png" alt="Imagen de Google Play"></a>
+                </div>
+            </div>
+            <img src="/img/img-landing-planta-oscura.png" alt="Planta con hojas verde oscura co pintas rosas, sobre fondo verde">
         </div>
     </main>
     <footer>
-        <a href=""><p>Sobre App Plantas</p></a>
-        <a href=""><p>Blog</p></a>
-        <a href=""><p>Novedades</p></a>
+        <div class="footerBloque1">
+            <img src="/img/icono-pagina.png" alt="Icono de pagina, Green Match con icono de hoja sobre circulo verde">
+            <div class="navAtajos">
+                <a href="/index.html"><p>Inicio</p></a>
+                <a href="/pages/contacto.html"><p>Contacto</p></a>
+                <a href="/pages/rrss.html"><p>Redes Sociales</p></a>
+                <a href="/pages/vendedores.html"><p>Vendedores</p></a>
+                <a href="/pages/blog.html"><p>Blog</p></a>
+            </div>
+        </div>
+        <div class="footerBloque2">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
     </footer>
 </body>
 </html>
