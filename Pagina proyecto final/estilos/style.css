@@ -3,10 +3,11 @@
     padding: 0;
     } 
 
-/*Estilos a barra de navegacion
--Icono de la app 
--Icono de lugar de donde se visita, con posibilidad de cambiarlo
--Navbar
+/*
+    Estilos a barra de navegacion
+    -Icono de la app 
+    -Icono de lugar de donde se visita, con posibilidad de cambiarlo
+    -Navbar
 */
 nav{
     display: flex;
@@ -30,6 +31,7 @@ nav{
     align-items: center;
     margin-left: 40px;
     padding:5px;
+    width: 7em;
     i{
         color: #1D7874;
         padding: 7%;
@@ -61,12 +63,13 @@ nav{
     transition: 0.2s;
 }
 
-/*Main
-    4 secciones: 
-    1)Bienvenida a la app 
-    2)funciones
-    3)reviews
-    4)descarga
+/*
+    Main
+        4 secciones: 
+        1)Bienvenida a la app 
+        2)funciones
+        3)reviews
+        4)descarga
 */
 main{
     margin: 10px 70px 15px 70px;
@@ -75,6 +78,16 @@ main{
     display: flex;
     flex-direction: column;
     overflow: visible;
+}
+
+
+
+/*
+    ESTILO A <span> PARA RESALTAR ALGUNAS PALABRAS
+*/
+
+.bold{
+    color: #1D7874;
 }
 
 /*1)Seccion: bienvenida a la app*/
@@ -100,9 +113,9 @@ main{
 
 }
 .tituloPrincipal{
-    font-family: "Roboto","bold";
+    font-family: "Roboto",bold;
     font-style: bold;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 40px;
     margin: 5px;
 }

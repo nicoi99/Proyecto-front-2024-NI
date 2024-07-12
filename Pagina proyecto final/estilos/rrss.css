@@ -125,6 +125,9 @@ main{
     font-weight: 700;
     font-size: 40px;
     margin: 5px;
+    color: #fff;
+}
+.bloquePrincipalRRSS .tituloPrincipal .bold{
     color: #D4C5E2;
 }
 
@@ -189,7 +192,13 @@ main{
     padding: 25px;
     justify-content: center;
     align-items: center;
+    iframe{
+        width: 600px;
+        height: 400px;
+    }
 }
+
+
 
 .bloqueYoutube .texto{
     display: flex;
@@ -203,6 +212,10 @@ main{
     color: black;
     font-weight: 700;
     font-size: 50px;
+}
+
+.bloqueYoutube .tituloPrincipal .bold{
+    color: #1D7874;
 }
 
 .bloqueYoutube .texto .subtitulo2{
@@ -222,10 +235,15 @@ main{
     margin: 25px 50px;
     padding: 25px;
     width: 50vw;
+    gap: 2em;
 }
 
 .bloqueSeguir .tituloPrincipal{
     color: black;
+}
+
+.bloqueSeguir .bold{
+    color: #1D7874;
 }
 
 .bloqueSeguir .btn{
