@@ -1,0 +1,10 @@
+//COSAS X CORREGIR DE PROYECTO FRONT//
+
+-Buscar imágenes de mejor calidad
+-ver si se puede hacer borde con degradé, sino buscar alternativa 
+-página rrss: 	
+	-tratar de ubicar las imágenes como estaba en el prototipo. 
+	-detrás de las imágenes de rrss, buscar ubicar al fondo verde como estaba en el prototipo
+
+-lograr que el texto sea de un color y bold en algunas partes
+

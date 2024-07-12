@@ -62,11 +62,11 @@ nav{
 }
 
 /*Main
-4 secciones: 
-1)Bienvenida a la app 
-2)funciones
-3)reviews
-4)descarga
+    4 secciones: 
+    1)Bienvenida a la app 
+    2)funciones
+    3)reviews
+    4)descarga
 */
 main{
     margin: 10px 70px 15px 70px;
@@ -74,6 +74,7 @@ main{
     justify-content: center;
     display: flex;
     flex-direction: column;
+    overflow: visible;
 }
 
 /*1)Seccion: bienvenida a la app*/

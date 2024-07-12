@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     } 
 
 /*Estilos a barra de navegacion
@@ -30,6 +31,7 @@ nav{
     align-items: center;
     margin-left: 40px;
     padding:5px;
+    width: 8em;
     i{
         color: #1D7874;
         padding: 7%;
@@ -62,11 +64,11 @@ nav{
 }
 
 /*Main
-4 secciones: 
-1)Bienvenida a la app 
-2)funciones
-3)reviews
-4)descarga
+    4 secciones: 
+    1)Bienvenida a la app 
+    2)funciones
+    3)reviews
+    4)descarga
 */
 main{
     background-color: white;
@@ -74,20 +76,39 @@ main{
     align-items: center;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
- /*--MAIN-- 3 SECCIONES:
- 1)PRINCIPAL - VISTAZO RÁPIDO DE RRSS PRINCIPALES
- 2)SEGUNDA PARTE -- YOUTUBE - ULTIMO VIDEO Y RESUMEN
- 3)ULTIMA PARTE -- NEWSLETTER*/
+ /*
+    --MAIN-- 3 SECCIONES:
+    1)PRINCIPAL - VISTAZO RÁPIDO DE RRSS PRINCIPALES
+    2)SEGUNDA PARTE -- YOUTUBE - ULTIMO VIDEO Y RESUMEN
+    3)ULTIMA PARTE -- NEWSLETTER
+ */
 
 .bloquePrincipalRRSS{
     display: flex;
+    width: 100vw;
     flex-direction: column;
-    background-color: #1D7874;
     justify-content: center;
     align-content: center;
-    border-radius: 0 0 15px 15px;
     margin: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.bloquePrincipalRRSS > * {
+    z-index: 100;
+}
+
+.bloquePrincipalRRSS::after{
+    content: ' ';
+    background-color: #1D7874;
+    position: absolute;
+    width: 100vw;
+    height: 45vw;
+    top: 0;
+    border-radius: 0 0 70px 70px;
+    z-index: 1;
 }
 
 .texto{
@@ -110,7 +131,7 @@ main{
 .subtituloSecundario{
     font-family: "Roboto", "light";
     font-style: light;
-    font-weight: 350;
+    font-weight: 500;
     font-size: 25px;
     margin: 5px 10px;
 }
@@ -153,8 +174,8 @@ main{
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 .btn:hover{
-    background-color: rgba(37, 154, 148, 0.691);
-    border: 1px solid black;
+    background-color: #1D7874;
+    border: none;
     color: white;
     transition: 0.2s;
     cursor: pointer;
@@ -164,7 +185,7 @@ main{
 .bloqueYoutube{
     display: flex;
     flex-direction: row;
-    margin: 50px;
+    margin: 100px 50px;
     padding: 25px;
     justify-content: center;
     align-items: center;
