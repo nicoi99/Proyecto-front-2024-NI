@@ -63,6 +63,8 @@ nav{
     transition: 0.2s;
 }
 
+
+
 /*Main
     4 secciones: 
     1)Bienvenida a la app 
@@ -146,11 +148,13 @@ main{
     justify-content: center;
     margin: 20px;
     padding: 20px;
+    position: relative;
+    overflow: visible;
     img{
         width: 320px;
         height: auto;
         margin: 5px;
-        border-radius: 20px 20px 0 0;
+        border-radius: 25px 25px 0 0;
     }
 }
 
@@ -159,6 +163,15 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    opacity: 90%;
+    transition: 0.15s;
+}
+
+.RRSSindiv:hover{
+    opacity: 100%;
+    top: -2em;
+    cursor: pointer;
 }
 
 

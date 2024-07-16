@@ -65,17 +65,18 @@ nav{
 3)Contacto*/
 
 main{
-    margin: 30px 50px 15px 50px;
     background-color: white;
     align-items: center;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 /*PREGUNTAS FRECUENTES */
 .bloquePreguntasFrecuentes{
     display: flex;
     flex-direction: row;
+    margin: 5rem 1rem;
     img{
         width: 450px;
     }
@@ -95,6 +96,10 @@ main{
     font-size: 40px;
     margin: 5px;
     text-align: left;
+}
+
+.bloquePreguntasFrecuentes .bold{
+    color: #1D7874;
 }
 
 .bloqueTextoPequeño1{
@@ -127,10 +132,9 @@ main{
     background-color: #1D7874;
     flex-direction: column;
     width: 100vw;
-    overflow: hidden;
     padding: 30px;
     margin: 10px 0;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 80px 80px;
     justify-content: center;
 }
 
@@ -138,6 +142,10 @@ main{
     color: #fff;
     text-align: center;
     margin: 10px;
+}
+
+.parteDescarga-2 .bold{
+    color:#D4C5E2;
 }
 
 .bloqueDescarga{
@@ -164,22 +172,24 @@ a img:hover{
 .bloqueContacto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 10px 50px;
     padding: 15px;
 }
 
 .bloqueImgYFormulario{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    img{
+        width: 450px;
+    }
 
 }
 .bloqueContacto .texto{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2.7rem;
 }
 
 .tituloPrincipal{
@@ -191,6 +201,9 @@ a img:hover{
     margin: 5px;
 }
 
+.bloqueContacto .bold{
+    color: #1D7874;
+}
 .subtituloSecundario{
     font-family: "Roboto", "light";
     font-style: light;
@@ -199,16 +212,9 @@ a img:hover{
     margin: 5px 10px;
 }
 
-.bloqueImgYFormulario{
-    img{
-        width: 450px;
-    }
-    display: flex;
-    flex-direction: row;
-}
 
 .formularioContacto{
-    margin: 50px;
+    margin: 0 5rem;
 }
 
 .formularioContacto form{
@@ -253,7 +259,7 @@ a img:hover{
 .comentarios-Btn{
     display: flex;
     flex-direction: column;
-    margin: 10px 0;
+    margin: 1.2rem 0;
 }
 
 #Comentarios{
@@ -289,7 +295,6 @@ a img:hover{
 }
 .btnEnviar input:hover{
     background-color: #fff;
-    border: 1px solid black;
     color: black;
     transition: 0.2s;
     cursor: pointer;
