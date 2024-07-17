@@ -30,6 +30,7 @@ nav{
     align-items: center;
     margin-left: 40px;
     padding:5px;
+    width: 7em;
     i{
         color: #1D7874;
         padding: 7%;
@@ -68,13 +69,27 @@ main{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
-#bannerBlog{
-    width: 1350px;
-    height: auto;
-    overflow: hidden;
+.banner-blog{
+    width: 100vw;
+    height: 25rem;
+    position: relative;
+    background-image: url(/img/img-suculentas.jpg);
+    img{
+        width: 10%;
+    }
+}
+
+.banner-blog::after{
+    content: ' ';
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: .5;
 }
 
 /*BLOQUE ULTIMO POST*/
@@ -84,6 +99,7 @@ main{
     margin: 80px 20px;
     align-items: center;
     background-color: #D4C5E2;
+    overflow-x: hidden;
     border-radius: 15px;
     img{
         width:600px;
@@ -96,15 +112,18 @@ main{
 .texto{
     display: flex;
     flex-direction: column;
+    text-align: left;
     line-height: 30px;
     a{
         text-decoration: none;
     }
 }
 
-.tituloPrincipal{
+.bloqueUltimoPost .tituloPrincipal{
     font: 40px "Roboto", "extrabold";
     font-weight: 800;
+    justify-content: left;
+    margin: 0;
 }
 .subtituloPost{
     font: 20px "Roboto", "light";
@@ -158,6 +177,7 @@ Aplicación de DISPLAY GRID */
 
 .bloquePostAnteriores{
     display: grid;
+    margin: 2.5rem 0;
     grid-template-columns: repeat(2, auto);
     grid-template-rows:repeat(3, auto);
     grid-template-areas: 
@@ -175,7 +195,7 @@ Aplicación de DISPLAY GRID */
         font-weight: 400;
     }
     justify-content: center;
-    margin: 10px 0;
+    margin: 3rem 0;
 }
 
 /*BLOQUE  DE POSTS ANTERIORES- POSIBILIDAD DE VER UNA VISTA PREVIA
@@ -185,10 +205,12 @@ CON TEXTO CORTO, Y LUEGO ENTRAR PARA LEER MÁS*/
     grid-area: posts;
     margin: 5px 10px;
     padding: 10px;
-    width: 90%;
+    width: 50vw;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
+    column-gap: 2em;
+    row-gap: 2em;
 }
 
 .postIndividual{
@@ -199,8 +221,8 @@ CON TEXTO CORTO, Y LUEGO ENTRAR PARA LEER MÁS*/
     margin: 5px;
     border:solid rgb(29, 120, 116, 0.5) 1px;
     border-radius: 15px;
-    width: 430px;
-    height: 350px;
+    width: 35rem;
+    height: auto;
 }
 
 .imgPost{
@@ -208,14 +230,14 @@ CON TEXTO CORTO, Y LUEGO ENTRAR PARA LEER MÁS*/
     justify-content: center;
     img{
         border-radius: 15px;
-        width: 300px;
-        height: 200px;
+        width: 460x;
+        height: 300px;
     }
 }
 
 .imgPost img:hover{
-    width: 310px;
-    height: 210px;
+    width: 460px;
+    height: auto;
     transition: 0.2s;
 }
 
@@ -252,8 +274,9 @@ CON TEXTO CORTO, Y LUEGO ENTRAR PARA LEER MÁS*/
 /*BARRA DE CATEGORIAS - NAVEGABLE*/
 .navCategorias{
     grid-area: categorias;
-    justify-self: start;
-    margin: 5px 0;
+    justify-self:right;
+    width: 25vw;
+    margin: 1rem;
     border: solid rgb(29, 120, 116, 0.5) 1px;
     border-radius: 15px 0 0 15px;
     a{
@@ -288,16 +311,20 @@ CON TEXTO CORTO, Y LUEGO ENTRAR PARA LEER MÁS*/
 .bloqueNewsletter{
     display: flex;
     flex-direction: column;
-    margin: 15px 100px;
+    margin: 5rem;
     padding: 20px;
     justify-content: center;
     line-height: 1.4em;
     align-items: center;
+    gap: .2rem;
 }
 
-.tituloPrincipal{
+.bloqueNewsletter .tituloPrincipal{
+    font: 40px "Roboto", "extrabold";
+    font-weight: 800;
     display: flex;
     justify-content: center;
+    margin: .7rem;
 }
 
 .subtituloSecundario{
@@ -375,6 +402,7 @@ CON TEXTO CORTO, Y LUEGO ENTRAR PARA LEER MÁS*/
 .btn:hover{
     background-color: #fff;
     border: solid 1px #1D7874;
+    cursor: pointer;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
     color: black;
@@ -408,9 +436,9 @@ footer{
     flex-direction: row;
     align-items: center;
     padding: 15px;
-    justify-content: left;
+    justify-content: space-around;
     img{
-        width: 20%;
+        width: 15%;
     }
 }
 
